@@ -1,0 +1,34 @@
+<?xml version = "1.0"?> 
+<?xml-stylesheet type = "text/xsl" href="product.xsl"?> 
+<class>
+<product prodID = "1">
+	<prodName>cake</prodName>
+	<prodPrice>2000</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>1900</finalPrice>
+</product>
+<product prodID = "2">
+	<prodName>cookie</prodName>
+	<prodPrice>3000</prodPrice>
+	<discPerc>10</discPerc>
+	<finalPrice>2700</finalPrice>
+</product>
+<product prodID = "3">
+	<prodName>donut</prodName>
+	<prodPrice>1500</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>1425</finalPrice>
+</product>
+<product prodID = "4">
+	<prodName>3 layer cake</prodName>
+	<prodPrice>2700</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>2565</finalPrice>
+</product>
+<product prodID = "5">
+	<prodName>yum dum cake</prodName>
+	<prodPrice>2000</prodPrice>
+	<discPerc>10</discPerc>
+	<finalPrice>1800</finalPrice>
+</product>
+</class>

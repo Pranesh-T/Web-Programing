@@ -1,0 +1,5 @@
+var x= prompt("Enter First Name")
+var y= prompt("Enter Last Name")
+var z= prompt("Enter your age")
+console.log("Your name is "+ x + " " + y)
+console.log("Your age is "+ z)

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plasma</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="main.css">
+	<style type="text/css">
+		html { 
+		background-image: url(bg.jpg) no-repeat center center fixed ;
+		}
+    	.brand{
+    		background: #cbb09c !important;
+    	}
+    	.brand-text{
+    		color: #cbb09c !important;
+    	}
+    	form{
+    		max-width: 460px;
+    		margin: 20px auto;
+    		padding: 20px;
+    	}
+    	/*nakli code */
+    	h3{
+		 	font-size: 40px;
+		}
+    	h3:hover {
+		  font-size: 500px;
+		}
+		/*nakli code  ends*/
+    </style>
+</head>
+
+<body>
+
+	<!-- header -->
+	<nav class="white z-depth-0"> 
+		<div class="container">
+			<a href="home.html" class = "brand-logo brand-text" >PLASMA</a>
+			<ul id="nav-mobile" class="right hide-on-small-and-down">
+				<li><a href="about.html" class="btn brand z-depth-0">About</a></li> 
+                <li><a href="donor.html" class="btn brand z-depth-0 disabled">Donor Portal</a></li>
+				<li><a href="#" class="btn brand z-depth-0">Dispatched Requests</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- header ends -->
+
+	<section class="container grey-text">
+		<h4 class="center">Donor willingness Form</h4>
+		<!-- form starts -->
+		<form class="white" name="myform" method="POST" action="Week7.jsp">
+
+			<label>Donor Name: </label>
+			<input type="text" name="name" value="">
+
+			<label>Donor Email: </label>
+			<input type="text" name="email" value="">
+
+			<label>Date of Birth: </label>
+  			<input type="text" class="datepickerDOB">
+
+			<label>Address Line 1: </label>
+			<input type="text" name="address1" value="">
+
+			<label>Address Line 2: </label>
+			<input type="text" name="address2" value="">
+
+			<label>City: </label>
+			<input type="text" name="city" value="">
+
+			<label>State: </label>
+			<input type="text" name="state" value="">
+
+			<label>Pin Code: </label>
+			<input type="number" name="pin" value="">
+
+			<label>Number of people living in the above address: </label>
+			<input type="number" name="people" value="">
+
+			<label>Cured On: </label>
+  			<input type="text" class="datepickerCured">
+        
+			<label>Upload a passport size photograph: </label>
+			<br/>
+			<br/>
+			<!--<input type="file" name="file" size="50" />-->
+			<br/>
+			<br/>
+			<div class="center">
+				<input type="submit" name="submit" value="submit" class="btn brand z-depth-0 "> 
+			</div>
+
+		</form>
+		<!-- form ends  -->
+	</section>
+
+	<!-- footer -->
+	<footer class="section">
+		<div class="center grey-text">Plasma Project by Varun Pandey(RA1711020010043)</div>
+	</footer>
+	<!-- footer ends -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		const Calender1 = document.querySelector('.datepickerDOB');
+		M.Datepicker.init(Calender1,{
+			format:'dd-mmmm-yyyy',
+			showClearBtn: true,
+		}
+
+
+		);
+	</script>
+	<script type="text/javascript">
+		const Calender2 = document.querySelector('.datepickerCured');
+		M.Datepicker.init(Calender2,{
+			format:'dd-mmmm-yyyy',
+			showClearBtn: true,
+		}
+		);
+	</script>
+</body>
+</html>
